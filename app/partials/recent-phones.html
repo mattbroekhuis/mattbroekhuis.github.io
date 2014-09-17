@@ -1,0 +1,9 @@
+<div class="recent-phones" ng-show="state.recentlyViewed.length">
+    <div class="panel-title">Recently Viewed Phones</div>
+    <ul class="list-unstyled" >
+       <li ng-repeat="phone in state.recentlyViewed">
+           <a href="#/phones/{{phone.id}}">{{phone.name}}</a>
+       </li>
+    </ul>
+
+</div>
