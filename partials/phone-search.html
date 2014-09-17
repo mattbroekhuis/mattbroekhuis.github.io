@@ -1,0 +1,18 @@
+<div class="phone-search">
+    <form role="form">
+        <div class="form-group">
+            <label for="phoneQuery">Search</label> <input id="phoneQuery" class="form-control" ng-model="state.query"
+                                                          ng-focus="api.showPhoneSearch()"/>
+        </div>
+
+
+        <div class="form-group">
+            <label for="phoneSort">Sort</label>
+            <select  id="phoneSort" class="form-control" ng-model="state.orderProp" ng-change="api.showPhoneSearch()">
+            <option value="name">Alphabetical</option>
+            <option value="age">Newest</option>
+        </select>
+        </div>
+    </form>
+
+</div>
